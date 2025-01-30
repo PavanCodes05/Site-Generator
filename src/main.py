@@ -1,8 +1,8 @@
 from textnode import TextType, TextNode
-from htmlnode import HTMLNode
+from htmlnode import HTMLNode, LeafNode
 
 def main():
-    dummy = HTMLNode("p", "This is a paragraph", None, {"href": "https://somewhere.com", "src": "Hello this is the page"})
+    dummy = LeafNode("p", "This is a paragraph")
     print(dummy)
-
+    print(dummy.to_html())
 main()
