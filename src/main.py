@@ -1,7 +1,8 @@
 from textnode import TextType, TextNode
+from htmlnode import HTMLNode
 
 def main():
-    dummy = TextNode("This is a text node", TextType.BOLD, "https://boot.dev")
+    dummy = HTMLNode("p", "This is a paragraph", None, {"href": "https://somewhere.com", "src": "Hello this is the page"})
     print(dummy)
 
 main()
